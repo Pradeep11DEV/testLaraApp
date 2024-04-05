@@ -1,0 +1,26 @@
+--------------------
+| Laravel Basic CLI |
+--------------------
+#create new project 
+->composer create-project laravel/laravel "project name"
+
+#run the project
+->php artisan serve
+
+#create migration(db tables)
+->php artisan make:migration "migration name"
+
+#after create migration inside have to create basic table structure
+
+->Schema::create('table_name',function(Blueprint $table){
+	'make the table structure'(this will be discussed in future);
+});
+
+#After create table structure make sure the file is saved
+and run the below to create the tables in database
+
+->php artisan migrate
+
+#To create Controller
+->php artisan make:Controller "ControllerName"
+#Please use the controller name in camle case as above because this will our controller class name so it will be usefull in further.
